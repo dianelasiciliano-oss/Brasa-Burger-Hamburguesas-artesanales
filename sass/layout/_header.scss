@@ -134,3 +134,31 @@
         display: block;
     }
 }
+/* =========================================================
+   FIX ICONO MENÚ MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+    .menu-label {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        font-size: 0;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+
+        &::before {
+            content: "☰";
+            color: #ffffff;
+            font-size: 1.6rem;
+            line-height: 1;
+        }
+    }
+
+    .menu-icono {
+        display: none !important;
+    }
+}
