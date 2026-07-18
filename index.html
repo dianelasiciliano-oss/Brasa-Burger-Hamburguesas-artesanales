@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasa Burger | Hamburguesas artesanales</title>
+    <meta name="description" content="Brasa Burger es una hamburguesería artesanal con burgers premium, combos, pedidos online, take away y atención en local.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="menu container">
+
+            <a href="./index.html" class="logo" aria-label="Ir al inicio de Brasa Burger">
+                Brasa Burger
+            </a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <label for="menu-toggle" class="menu-label" aria-label="Abrir menú de navegación">
+                <img class="menu-icono" src="imag/menu.png" alt="Abrir menú de navegación">
+            </label>
+
+            <nav class="navbar" aria-label="Navegación principal">
+              <ul>
+                <li><a href="./index.html" aria-current="page">Inicio</a></li>
+                <li><a href="./pages/servicios.html">Servicios</a></li>
+                <li><a href="./pages/productos.html">Productos</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+              </ul>
+           </nav>
+
+        </div>
+    </header>
+
+  <main>
+        <section class="hero">
+            <div class="hero__content">
+                <p class="section-label">Hamburguesas artesanales</p>
+                <h1>Una burguer bien hecha</h1>
+
+                <p>
+                    En Brasa Burger preparamos hamburguesas artesanales con carne,
+                    opciones veggie y sin TACC. Las acompañamos con cheddar fundido,
+                    vegetales frescos y nuestra salsa de la casa. Podés disfrutarlas
+                    en el local, pedirlas para retirar o hacer tu pedido directamente
+                    desde nuestra app.
+                </p>
+
+                <a href="./pages/productos.html" class="btn btn--primary">Ver productos</a>
+            </div>
+
+            <div class="hero__image">
+                <img src="./imag/hero-hamburguesa.jpeg" alt="Hamburguesa artesanal de Brasa Burger con cheddar, vegetales frescos y pan con semillas">
+            </div>
+        </section>
+
+        <section class="section favoritos">
+            <div class="section__heading">
+                <p class="section-label">Favoritos de la casa</p>
+                <h2>Combos pensados para comer rico</h2>
+
+                <p>
+                    Encontrá opciones clásicas, dobles y premium para todos los gustos.
+                    Podés elegir papas fritas o noisette, sumar tu bebida favorita y pedir
+                    para comer en el local, retirar o recibir en casa.
+                </p>
+
+                <a href="./pages/productos.html" class="btn btn--secondary">Conocer el menú</a>
+            </div>
+
+            <div class="cards">
+                <article class="card">
+                    <img src="./imag/combo-bbq-bacon.png" alt="Combo BBQ Bacon con hamburguesa, papas fritas y bebida">
+                    <div class="card__content">
+                        <h3>Combo BBQ Bacon</h3>
+                        <p>
+                            Burger con cheddar, bacon, cebolla caramelizada y salsa BBQ.
+                            Viene con papas y bebida.
+                        </p>
+                        <p class="card__price">$15.000</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="./imag/combo-crispy-bacon.png" alt="Combo Crispy Bacon con hamburguesa, papas fritas y bebida">
+                    <div class="card__content">
+                        <h3>Combo Crispy Bacon</h3>
+                        <p>
+                            Burger con cheddar, panceta, cebolla morada, verdes frescos
+                            y salsa especial. Incluye papas y bebida.
+                        </p>
+                        <p class="card__price">$15.000</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="./imag/combo-noisette.png" alt="Combo Noisette con hamburguesa, papas noisette y jugo">
+                    <div class="card__content">
+                        <h3>Combo Noisette</h3>
+                        <p>
+                            Burger con queso, hongos, cebolla caramelizada y salsa BBQ.
+                            Acompañada con papas noisette y jugo.
+                        </p>
+                        <p class="card__price">$15.000</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section split">
+            <div class="split__content">
+                <p class="section-label">Ingredientes premium</p>
+                <h2>Para todos los gustos</h2>
+
+                <p>
+                    En Brasa Burger preparamos cada hamburguesa con pan fresco,
+                    carne jugosa, opciones veggie, vegetales seleccionados y combinaciones
+                    pensadas para lograr el equilibrio justo entre sabor, textura y presentación.
+                </p>
+
+                <a href="./pages/nosotros.html" class="btn btn--secondary">Sobre nosotros</a>
+            </div>
+
+            <div class="split__image">
+                <img src="./imag/preparacion-burger.png" alt="Preparación de hamburguesa artesanal con guantes negros y vegetales frescos">
+            </div>
+        </section>
+
+        <section class="section split split--reverse">
+            <div class="split__content">
+                <p class="section-label">Local, take away y delivery</p>
+                <h2>Comé acá o en casa</h2>
+
+                <p>
+                    Brasa Burger está pensada para resolver distintos momentos:
+                    una cena con amigos, un almuerzo rápido, un pedido para llevar
+                    o una hamburguesa bien cargada desde casa.
+                </p>
+
+                <a href="./pages/servicios.html" class="btn btn--primary">Ver servicios</a>
+            </div>
+
+            <div class="split__image">
+                <img src="./imag/hombre-comiendo-burger.png" alt="Hombre disfrutando una hamburguesa artesanal con papas fritas">
+            </div>
+        </section>
+
+        <section class="section app">
+            <div class="app__content">
+                <p class="section-label">Pedidos online</p>
+                <h2>Descargá la app</h2>
+
+                <p>
+                    Pedí más rápido, consultá promociones, guardá tus hamburguesas favoritas
+                    y seguí el estado de tu pedido desde el celular.
+                </p>
+
+                <div class="app__buttons" aria-label="Botones para descargar la app">
+                    <a href="#" aria-label="Descargar en App Store">
+                        <img src="./imag/app-store.png" alt="Disponible en App Store">
+                    </a>
+
+                    <a href="#" aria-label="Descargar en Google Play">
+                        <img src="./imag/google-play.png" alt="Disponible en Google Play">
+                    </a>
+                </div>
+            </div>
+
+            <div class="app__image">
+                <img src="./imag/app-pedidos-burger.png" alt="Celular con icono de descarga y hamburguesa para pedidos online">
+            </div>
+        </section>
+
+        <section class="section cta">
+            <div class="cta__content">
+                <p class="section-label">Reservas y pedidos</p>
+                <h2>Contactanos para pedir o reservar</h2>
+
+                <p>
+                    Escribinos para consultar promociones, reservar una mesa o coordinar
+                    tu pedido. También podés acercarte al local y disfrutar tu hamburguesa
+                    recién hecha.
+                </p>
+
+                <a href="./pages/contacto.html" class="btn btn--primary">Ir a contacto</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__brand">
+                <h2>Brasa Burger</h2>
+                <p>Hamburguesas artesanales para comer rico, pedir fácil y disfrutar más.</p>
+            </div>
+
+            <div class="footer__column">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/productos.html">Productos</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__column">
+                <h3>Servicios</h3>
+                <ul>
+                    <li><a href="./pages/servicios.html">Delivery</a></li>
+                    <li><a href="./pages/servicios.html">Take away</a></li>
+                    <li><a href="./pages/contacto.html">Reservas</a></li>
+                    <li><a href="./pages/servicios.html">App de pedidos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__column">
+                <h3>Horarios</h3>
+                <p>Lunes a domingos: 19 a 00 hrs</p>
+
+                <h3>Ubicación</h3>
+                <p>La Plata, Buenos Aires</p>
+                <a href="./pages/contacto.html">Ver dirección</a>
+            </div>
+
+            <div class="footer__column">
+                <h3>Redes</h3>
+                <ul>
+                    <li><a href="#" aria-label="Contactar por WhatsApp">WhatsApp</a></li>
+                    <li><a href="#" aria-label="Ver Instagram de Brasa Burger">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>© 2026 Brasa Burger. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

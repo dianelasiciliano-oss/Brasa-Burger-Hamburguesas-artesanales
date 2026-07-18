@@ -1,0 +1,91 @@
+@use "variables" as *;
+
+@mixin container($width: $container, $percent: 92%) {
+    width: min($width, $percent);
+    margin-inline: auto;
+}
+
+@mixin full-bleed {
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin grid($columns, $gap: 24px, $align: stretch) {
+    display: grid;
+    grid-template-columns: $columns;
+    gap: $gap;
+    align-items: $align;
+}
+
+@mixin glass($radius: $radius-lg, $shadow-value: $shadow-soft, $opacity-a: 0.10, $opacity-b: 0.035) {
+    border: 1px solid $glass-border;
+    border-radius: $radius;
+    background: linear-gradient(145deg, rgba(255, 255, 255, $opacity-a), rgba(255, 255, 255, $opacity-b));
+    box-shadow: $shadow-value;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+@mixin clean-image-wrapper {
+    @include flex-center;
+    min-height: auto;
+    overflow: visible;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+@mixin clean-image($max-width: 620px, $shadow-alpha: 0.55) {
+    width: 100%;
+    max-width: $max-width;
+    height: auto;
+    min-height: auto;
+    object-fit: contain;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    filter: drop-shadow(0 30px 45px rgba(0, 0, 0, $shadow-alpha));
+}
+
+@mixin title-fluid($min: 2.8rem, $vw: 5vw, $max: 5rem, $line: 1) {
+    font-size: clamp($min, $vw, $max);
+    line-height: $line;
+    letter-spacing: -0.05em;
+}
+
+@mixin left-premium-detail($color: rgba(255, 154, 46, 0.45)) {
+    content: "";
+    position: absolute;
+    top: 18%;
+    left: 0;
+    z-index: 0;
+    width: 2px;
+    height: 64%;
+    pointer-events: none;
+    background: linear-gradient(to bottom, transparent, $color, transparent);
+    box-shadow: 0 0 38px rgba(255, 106, 33, 0.28);
+}
+
+@mixin media($breakpoint) {
+    @if $breakpoint == xl {
+        @media (max-width: $bp-xl) { @content; }
+    } @else if $breakpoint == lg {
+        @media (max-width: $bp-lg) { @content; }
+    } @else if $breakpoint == md {
+        @media (max-width: $bp-md) { @content; }
+    } @else if $breakpoint == sm {
+        @media (max-width: $bp-sm) { @content; }
+    } @else if $breakpoint == xs {
+        @media (max-width: $bp-xs) { @content; }
+    }
+}

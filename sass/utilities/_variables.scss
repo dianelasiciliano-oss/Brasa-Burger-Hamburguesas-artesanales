@@ -1,0 +1,55 @@
+$bg: #040100;
+$bg-soft: #0b0503;
+$bg-card: rgba(255, 255, 255, 0.055);
+$glass: rgba(255, 255, 255, 0.075);
+$glass-strong: rgba(255, 255, 255, 0.12);
+$glass-border: rgba(255, 255, 255, 0.16);
+$text: #ffffff;
+$text-soft: rgba(255, 255, 255, 0.72);
+$text-muted: rgba(255, 255, 255, 0.55);
+$orange: #f29a2e;
+$orange-soft: rgba(255, 106, 33, 0.14);
+$orange-strong: #ff5a1f;
+$gold: #ffc36a;
+$danger: #ff4d4d;
+$success: #4ade80;
+$radius-sm: 16px;
+$radius-md: 24px;
+$radius-lg: 34px;
+$radius-xl: 38px;
+$container: 1180px;
+$shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
+$shadow-soft: 0 16px 45px rgba(0, 0, 0, 0.35);
+$transition: 0.3s ease;
+
+$bp-xl: 1050px;
+$bp-lg: 992px;
+$bp-md: 768px;
+$bp-sm: 576px;
+$bp-xs: 480px;
+
+:root {
+    --bg: #{$bg};
+    --bg-soft: #{$bg-soft};
+    --bg-card: #{$bg-card};
+    --glass: #{$glass};
+    --glass-strong: #{$glass-strong};
+    --glass-border: #{$glass-border};
+    --text: #{$text};
+    --text-soft: #{$text-soft};
+    --text-muted: #{$text-muted};
+    --orange: #{$orange};
+    --orange-soft: #{$orange-soft};
+    --orange-strong: #{$orange-strong};
+    --gold: #{$gold};
+    --danger: #{$danger};
+    --success: #{$success};
+    --radius-sm: #{$radius-sm};
+    --radius-md: #{$radius-md};
+    --radius-lg: #{$radius-lg};
+    --radius-xl: #{$radius-xl};
+    --container: #{$container};
+    --shadow: #{$shadow};
+    --shadow-soft: #{$shadow-soft};
+    --transition: #{$transition};
+}

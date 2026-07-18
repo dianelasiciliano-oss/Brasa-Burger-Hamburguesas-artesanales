@@ -1,0 +1,21 @@
+@use "utilities/variables" as *;
+@use "utilities/mixins" as *;
+@use "utilities/extends"as *;
+@use "utilities/animations"as *;
+
+@use "base/reset"as *;
+@use "base/general"as *;
+@use "base/typography"as *;
+
+@use "components/buttons"as *;
+@use "components/cards"as *;
+@use "components/forms"as *;
+@use "components/images"as *;
+
+@use "layout/header"as *;
+@use "layout/home"as *;
+@use "layout/servicios"as *;
+@use "layout/productos"as *;
+@use "layout/contacto"as *;
+@use "layout/nosotros"as *;
+@use "layout/footer"as *;

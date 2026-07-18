@@ -1,0 +1,42 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.value-cards {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.value-card {
+    padding: 28px;
+
+    h3 {
+        margin-bottom: 12px;
+    }
+
+    &__icon {
+        width: 72px;
+        height: 72px;
+        margin-bottom: 20px;
+        padding: 16px;
+        object-fit: contain;
+        border-radius: 22px;
+        background: linear-gradient(135deg, #fff2df, $gold);
+        box-shadow: 0 16px 36px rgba(242, 154, 46, 0.18);
+    }
+}
+
+.historia,
+.experiencia {
+    .section__heading {
+        padding: 40px;
+        @include glass;
+    }
+}
+
+@include media(md) {
+    .historia,
+    .experiencia {
+        .section__heading {
+            padding: 28px;
+        }
+    }
+}

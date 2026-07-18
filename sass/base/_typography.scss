@@ -1,0 +1,83 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/extends" as *;
+
+.section-label {
+    margin-bottom: 12px;
+    color: $orange;
+    font-size: 0.86rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+h1,
+h2,
+h3 {
+    color: $text;
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.045em;
+}
+
+h1 {
+    font-size: clamp(3rem, 8vw, 6.8rem);
+}
+
+h2 {
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+h3 {
+    font-size: clamp(1.25rem, 2vw, 1.7rem);
+}
+
+p {
+    color: $text-soft;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.section__heading {
+    max-width: 760px;
+    margin-bottom: 44px;
+
+    h2 {
+        margin-bottom: 18px;
+    }
+
+    p + p {
+        margin-top: 12px;
+    }
+}
+
+.favoritos,
+.productos,
+.combos,
+.servicios,
+.valores,
+.contacto-info {
+    .section__heading {
+        @extend %section-centered;
+
+        p {
+            max-width: 780px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .btn {
+            margin: 24px auto 0;
+        }
+    }
+}
+
+@include media(xs) {
+    h1 {
+        font-size: clamp(2.5rem, 16vw, 4rem);
+    }
+
+    h2 {
+        font-size: clamp(1.9rem, 11vw, 3rem);
+    }
+}

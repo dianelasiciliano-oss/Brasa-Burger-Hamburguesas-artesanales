@@ -1,0 +1,112 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.contacto-form .form,
+.form {
+    @include grid(repeat(2, 1fr), 24px);
+    padding: 34px;
+    @include glass($radius-lg, $shadow, 0.10, 0.035);
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+
+        &--full {
+            grid-column: 1 / -1;
+        }
+    }
+
+    label {
+        margin-bottom: 8px;
+        color: $text;
+        font-size: 0.95rem;
+        font-weight: 800;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 15px 16px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 18px;
+        outline: none;
+        color: $text;
+        background: rgba(4, 1, 0, 0.76);
+        font-family: inherit;
+        font-size: 1rem;
+        transition: $transition;
+
+        &:hover {
+            border-color: rgba(242, 154, 46, 0.55);
+        }
+
+        &:focus {
+            border-color: $orange;
+            background: rgba(4, 1, 0, 0.96);
+            box-shadow: 0 0 0 4px rgba(242, 154, 46, 0.16);
+        }
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: rgba(255, 255, 255, 0.42);
+    }
+
+    textarea {
+        min-height: 150px;
+        resize: vertical;
+    }
+
+    button {
+        grid-column: 1 / -1;
+    }
+
+    &__help,
+    &__error {
+        margin-top: 7px;
+        font-size: 0.84rem;
+        line-height: 1.4;
+    }
+
+    &__help {
+        color: $text-muted;
+    }
+
+    &__error {
+        display: none;
+        color: $danger;
+        font-weight: 700;
+    }
+
+    input:invalid:not(:placeholder-shown),
+    textarea:invalid:not(:placeholder-shown),
+    select:invalid:focus {
+        border-color: $danger;
+    }
+
+    input:invalid:not(:placeholder-shown) ~ .form__error,
+    textarea:invalid:not(:placeholder-shown) ~ .form__error,
+    select:invalid:focus ~ .form__error {
+        display: block;
+    }
+
+    input:invalid:not(:placeholder-shown) ~ .form__help,
+    textarea:invalid:not(:placeholder-shown) ~ .form__help,
+    select:invalid:focus ~ .form__help {
+        display: none;
+    }
+}
+
+@include media(md) {
+    .contacto-form .form,
+    .form {
+        grid-template-columns: 1fr;
+        padding: 24px;
+        border-radius: 24px;
+
+        button {
+            width: 100%;
+        }
+    }
+}

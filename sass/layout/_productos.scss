@@ -1,0 +1,44 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/extends" as *;
+
+.product-card img {
+    height: 330px;
+}
+
+.combo-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.combo-item {
+    padding: 24px;
+
+    h3 {
+        margin-bottom: 10px;
+        font-size: 1.25rem;
+    }
+
+    p {
+        margin-bottom: 16px;
+        font-size: 0.94rem;
+    }
+
+    span {
+        color: $gold;
+        font-weight: 900;
+    }
+}
+
+@include media(xl) {
+    .combo-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@include media(md) {
+    .combo-list {
+        grid-template-columns: 1fr;
+    }
+}

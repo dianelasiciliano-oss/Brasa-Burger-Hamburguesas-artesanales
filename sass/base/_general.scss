@@ -1,0 +1,67 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: "Poppins", "Montserrat", Arial, sans-serif;
+    color: $text;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+        radial-gradient(ellipse at 0% 24%, rgba(255, 106, 33, 0.10) 0%, rgba(255, 106, 33, 0.035) 30%, transparent 58%),
+        linear-gradient(180deg, $bg 0%, #060201 44%, $bg 100%);
+    background-size: 64px 64px, 64px 64px, auto, auto;
+}
+
+.section {
+    @include container;
+    padding: 92px 0;
+}
+
+.cta {
+    padding: 72px 0;
+
+    &__content {
+        padding: clamp(34px, 6vw, 70px);
+        border: 1px solid rgba(242, 154, 46, 0.25);
+        border-radius: $radius-lg;
+        background:
+            radial-gradient(circle at top left, rgba(255, 90, 31, 0.22), transparent 36%),
+            linear-gradient(145deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.035));
+        box-shadow: $shadow;
+        text-align: center;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+
+        h2 {
+            max-width: 820px;
+            margin: 0 auto 18px;
+        }
+
+        p {
+            max-width: 720px;
+            margin: 0 auto 30px;
+        }
+    }
+}
+
+@include media(md) {
+    .section {
+        padding: 64px 0;
+    }
+}
+
+@include media(xs) {
+    .section {
+        width: min(100% - 28px, $container);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}

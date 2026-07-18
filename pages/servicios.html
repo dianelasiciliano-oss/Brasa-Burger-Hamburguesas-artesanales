@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Brasa Burger</title>
+    <meta name="description" content="Conocé los servicios de Brasa Burger: delivery, take away, reservas, pedidos desde la app y opciones para eventos.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="menu container">
+
+            <a href="../index.html" class="logo" aria-label="Ir al inicio de Brasa Burger">
+                Brasa Burger
+            </a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <label for="menu-toggle" class="menu-label" aria-label="Abrir menú de navegación">
+                <img class="menu-icono" src="../imagenes/menu.png" alt="Abrir menú de navegación">
+            </label>
+
+            <nav class="navbar" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./servicios.html" aria-current="page">Servicios</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+        <main>
+        <section class="hero hero--servicios">
+            <div class="hero__content">
+                <p class="section-label">Nuestros servicios</p>
+                <h1>Pedí como quieras</h1>
+
+                <p>
+                    Te ofrecemos distintas formas de pedir y disfrutar nuestras hamburguesas:
+                    atención en el local, take away, delivery, reservas y pedidos desde la app.
+                    La idea es que puedas resolver tu pedido de forma simple, rápida y cómoda.
+                </p>
+
+                <a href="./contacto.html" class="btn btn--primary">Ver disponibilidad</a>
+            </div>
+
+            <div class="hero__image">
+                <img src="../imag/servicios-hero-take-away.jpeg" alt="Hamburguesa artesanal en caja de take away sobre fondo negro">
+            </div>
+        </section>
+
+        <section class="section servicios">
+            <div class="section__heading">
+                <p class="section-label">Opciones disponibles</p>
+                <h2>Servicios para cada momento</h2>
+
+                <p>
+                    Ya sea para comer en el local, retirar rápido o pedir desde casa,
+                    Brasa Burger se adapta a diferentes necesidades de consumo.
+                </p>
+            </div>
+
+            <div class="service-cards">
+                <article class="service-card">
+                    <img src="../imag/icono-delivery.png" alt="Icono de camión de delivery" class="service-card__icon">
+
+                    <div class="service-card__content">
+                        <h3>Delivery</h3>
+                        <p>
+                            Recibí tu pedido en casa dentro de nuestra zona de cobertura.
+                            Ideal para noches de películas, juntadas o cenas sin cocinar.
+                        </p>
+
+                        <a href="./contacto.html" class="btn btn--secondary">Consultar zonas</a>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <img src="../imag/icono-take-away.png" alt="Icono de bolsa de take away" class="service-card__icon">
+
+                    <div class="service-card__content">
+                        <h3>Take away</h3>
+                        <p>
+                            Hacé tu pedido con anticipación y pasalo a buscar por el local.
+                            Una opción rápida para quienes prefieren retirar sin esperar.
+                        </p>
+
+                        <a href="./productos.html" class="btn btn--secondary">Ver menú</a>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <img src="../imag/icono-reservas.png" alt="Icono de calendario para reservas" class="service-card__icon">
+
+                    <div class="service-card__content">
+                        <h3>Reservas</h3>
+                        <p>
+                            Reservá una mesa para venir con amigos, familia o pareja.
+                            Recomendado para fines de semana y horarios de mayor movimiento.
+                        </p>
+
+                        <a href="./contacto.html" class="btn btn--secondary">Reservar mesa</a>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <img src="../imag/icono-app-pedidos.png" alt="Icono de celular para pedidos desde la app" class="service-card__icon">
+
+                    <div class="service-card__content">
+                        <h3>Pedidos desde la app</h3>
+                        <p>
+                            Pedí desde el celular, guardá tus productos favoritos y consultá
+                            promociones especiales disponibles para usuarios registrados.
+                        </p>
+
+                        <a href="#app" class="btn btn--secondary">Conocer la app</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <section class="section split">
+            <div class="split__content">
+                <p class="section-label">Pedido rápido</p>
+                <h2>Take away sin vueltas</h2>
+
+                <p>
+                    Si estás de paso o querés llevar tu pedido a casa, podés elegir
+                    tu hamburguesa, sumar papas, agregar bebida y retirarlo en el local.
+                    Mantenemos la preparación artesanal y cuidamos el empaque para que
+                    llegue en buenas condiciones.
+                </p>
+
+                <a href="./productos.html" class="btn btn--primary">Elegir productos</a>
+            </div>
+
+            <div class="split__image">
+                <img src="../imag/servicios-take-away-burgers.png" alt="Varias hamburguesas en cajas de take away sobre fondo negro">
+            </div>
+        </section>
+
+
+        <section class="section split split--reverse">
+            <div class="split__content">
+                <p class="section-label">Desde casa</p>
+                <h2>Delivery para disfrutar</h2>
+
+                <p>
+                    Nuestro servicio de delivery permite pedir hamburguesas, combos
+                    y bebidas desde tu casa. Antes de confirmar, podés consultar zona
+                    de cobertura, tiempos estimados y medios de pago disponibles.
+                </p>
+
+                <a href="./contacto.html" class="btn btn--primary">Consultar delivery</a>
+            </div>
+
+            <div class="split__image">
+                <img src="../imag/chica-en-su-casa.png" alt="Chica disfrutando una hamburguesa artesanal en casa">
+            </div>
+        </section>
+
+
+        <section class="section app" id="app">
+            <div class="app__content">
+                <p class="section-label">Pedidos online</p>
+                <h2>Pedí desde nuestra app</h2>
+
+                <p>
+                    La app está pensada para facilitar el pedido: podés ver productos,
+                    consultar promociones, guardar favoritos y elegir si querés delivery
+                    o retirar por el local.
+                </p>
+
+                <div class="app__buttons" aria-label="Botones para descargar la app">
+                    <a href="#" aria-label="Descargar en App Store">
+                        <img src="../imag/app-store.png" alt="Disponible en App Store">
+                    </a>
+
+                    <a href="#" aria-label="Descargar en Google Play">
+                        <img src="../imag/google-play.png" alt="Disponible en Google Play">
+                    </a>
+                </div>
+                
+            </div>
+                        <div class="app__image">
+                <img src="../imag/app-pedidos-burger.png" alt="Celular con icono de descarga y hamburguesa para pedidos online">
+            </div>
+        </section>
+
+
+        <section class="section cta">
+            <div class="cta__content">
+                <p class="section-label">Consultas</p>
+                <h2>¿Querés hacer un pedido o reservar?</h2>
+
+                <p>
+                    Escribinos para consultar horarios, zonas de entrega, disponibilidad
+                    de mesas o promociones vigentes. Te respondemos para ayudarte a
+                    coordinar tu pedido.
+                </p>
+
+                <a href="./contacto.html" class="btn btn--primary">Ir a contacto</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__brand">
+                <h2>Brasa Burger</h2>
+                <p>Hamburguesas artesanales para comer rico, pedir fácil y disfrutar más.</p>
+            </div>
+
+            <div class="footer__column">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__column">
+                <h3>Servicios</h3>
+                <ul>
+                    <li><a href="./servicios.html">Delivery</a></li>
+                    <li><a href="./servicios.html">Take away</a></li>
+                    <li><a href="./contacto.html">Reservas</a></li>
+                    <li><a href="#app">App de pedidos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__column">
+                <h3>Horarios</h3>
+                <p>Lunes a domingos: 19 a 00 hrs</p>
+
+                <h3>Ubicación</h3>
+                <p>La Plata, Buenos Aires</p>
+                <a href="./contacto.html">Ver dirección</a>
+            </div>
+
+            <div class="footer__column">
+                <h3>Redes</h3>
+                <ul>
+                    <li><a href="#" aria-label="Contactar por WhatsApp">WhatsApp</a></li>
+                    <li><a href="#" aria-label="Ver Instagram de Brasa Burger">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>© 2026 Brasa Burger. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

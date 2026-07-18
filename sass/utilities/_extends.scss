@@ -1,0 +1,54 @@
+@use "variables" as *;
+
+%glass-card {
+    overflow: hidden;
+    border: 1px solid $glass-border;
+    border-radius: $radius-lg;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.035));
+    box-shadow: $shadow-soft;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    transition: $transition;
+}
+
+%hover-lift {
+    transform: translateY(-8px);
+    border-color: rgba(242, 154, 46, 0.45);
+    box-shadow: 0 26px 70px rgba(0, 0, 0, 0.55);
+}
+
+%button-base {
+    position: relative;
+    isolation: isolate;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    overflow: hidden;
+    border: 0;
+    border-radius: 999px;
+    padding: 14px 28px;
+    font-size: 0.98rem;
+    font-weight: 800;
+    line-height: 1;
+    cursor: pointer;
+    transition: $transition;
+}
+
+%card-grid {
+    display: grid;
+    gap: 24px;
+}
+
+%section-centered {
+    max-width: 850px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+%absolute-decoration {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+}
