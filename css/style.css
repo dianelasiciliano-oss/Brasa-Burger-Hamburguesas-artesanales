@@ -1354,3 +1354,39 @@ p {
         display: none !important;
     }
 }
+
+@media (max-width: 768px) {
+    section {
+        overflow-x: hidden;
+
+        > div {
+            display: grid !important;
+            grid-template-columns: 1fr !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            gap: 1.5rem !important;
+
+            > article,
+            > div {
+                width: 100% !important;
+                max-width: 100% !important;
+                min-width: 0 !important;
+                height: auto !important;
+                min-height: auto !important;
+                margin: 0 !important;
+                padding: 1.5rem !important;
+
+                h2,
+                h3,
+                p,
+                a {
+                    width: 100% !important;
+                    max-width: 100% !important;
+                    white-space: normal !important;
+                    word-break: normal !important;
+                    overflow-wrap: break-word !important;
+                }
+            }
+        }
+    }
+}
